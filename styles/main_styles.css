@@ -41,6 +41,7 @@
 ***********/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face
 {
 	font-family: 'Beyond';
@@ -51,7 +52,23 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
-
+.about-me
+{
+    background: #FFF;
+    box-shadow: 0 3px 3px 0 rgba( 1,2,2,0.05);
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+.about-me-title
+{
+	text-align: center;
+	color: #a8aab3;
+	font-weight: 300;
+}
+.about-me-content
+{
+	background: #FFF;
+}
 *
 {
 	margin: 0;
@@ -65,8 +82,8 @@ body
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
-	color: #a5a5a5;
+	background: #f1f2f7;
+	color: #8c8c8c;
 }
 div
 {
@@ -222,7 +239,9 @@ section
 	transition: all 500ms ease;
 }
 .content{
-	margin-top: 150px;
+	margin-top: 334px;
+	margin-bottom: 160px;
+	background: #FFF;
 }
 .fill_height
 {
@@ -314,7 +333,7 @@ section
 
 .header
 {
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
 	background: rgba(54, 19, 84, 0.6);
 	z-index: 12;
@@ -2112,6 +2131,7 @@ section
 .copyright
 {
 	background: #1f0733;
+
 }
 .copyright_content
 {

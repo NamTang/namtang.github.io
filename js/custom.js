@@ -38,9 +38,18 @@ $(document).ready(function()
 		setHeader();
 	});
 
+	/*
 	$(document).on('scroll', function()
 	{
 		setHeader();
+	});
+	*/
+
+	$(function(){
+		$("a[href='about-me']").on('click', function(event) {
+			event.preventDefault();
+			$("article[id='about-me']").focus();
+		});
 	});
 
 	initHomeSlider();
@@ -191,9 +200,9 @@ $(document).ready(function()
 
 	function initMenu()
 	{
-		if($('.hamburger').length && $('.menu').length)
+		if($('div.hamburger').length && $('.menu').length)
 		{
-			var hamb = $('.hamburger');
+			var hamb = $('div.hamburger');
 			var close = $('.menu_close_container');
 
 			hamb.on('click', function()

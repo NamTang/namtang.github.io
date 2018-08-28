@@ -83,6 +83,10 @@
 
 @media only screen and (max-width: 1199px)
 {
+	.content{
+		margin-top: 300px;
+		margin-bottom: 168px;
+	}
 	.main_nav_container
 	{
 		margin-right: 121px;
@@ -313,7 +317,8 @@
 {
 	.content
 	{
-		margin-top: 60px;
+		margin-top: 150px;
+		margin-bottom: 100px;
 	}
 	p{font-size: 13px;}
 	.top_bar
