@@ -236,12 +236,14 @@ $(document).ready(function()
 	function openMenu()
 	{
 		menu.addClass('active');
+		header.addClass('position-fixed');
 		menuActive = true;
 	}
 
 	function closeMenu()
 	{
 		menu.removeClass('active');
+		header.removeClass('position-fixed');
 		menuActive = false;
 	}
 
