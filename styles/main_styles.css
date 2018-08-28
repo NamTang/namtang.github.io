@@ -69,6 +69,20 @@
 {
 	background: #FFF;
 }
+.name
+{
+	color: #32323a;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.major
+{
+	font-size: 16px;
+    color: #808080;
+}
 *
 {
 	margin: 0;
@@ -2177,4 +2191,7 @@ section
 .footer_nav_item a:hover
 {
 	color: #FFFFFF;
+}
+i.fa.fa-map-marker.pr-md-1 {
+    font-size: 17px;
 }

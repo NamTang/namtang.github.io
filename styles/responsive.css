@@ -307,6 +307,14 @@
 	{
 		height: 524px;
 	}
+	.col-md-8
+	{
+		margin-bottom: 10px;
+	}
+	.col-md-4
+	{
+		margin-top: 10px;
+	}
 }
 
 /************
@@ -585,4 +593,23 @@
 @media only screen and (max-width: 400px)
 {
 	
+}
+
+/************
+14. 377px
+************/
+@media only screen and (max-width: 377px)
+{
+	.main_nav
+	{
+		height: 80px;
+	}	
+}
+
+@media only screen and (max-width: 293px)
+{
+	.main_nav
+	{
+		height: 120px;
+	}	
 }
