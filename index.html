@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgba(54, 19, 84, 0.6)">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nam Tang</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -20,18 +21,6 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="./plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-    <!-- <script src="./plugins/easing/easing.js"></script> -->
-
-    <!-- COLORLIB -->
-    <script src="./js/custom.js"></script>
-    <!-- END COLORLIB -->
 
     <!-- Header -->
     <div class="super_container">
@@ -48,17 +37,17 @@
                             <div class="social">
                                 <ul class="social_list">
                                     <li class="social_list_item">
-                                        <a href="https://github.com/NamTang" target="_blank">
+                                        <a href="https://github.com/NamTang" target="_blank" rel="noreferrer">
                                             <i class="fa fa-github" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="social_list_item">
-                                        <a href="https://www.facebook.com/zLuCasz" target="_blank">
+                                        <a href="https://www.facebook.com/zLuCasz" target="_blank" rel="noreferrer">
                                             <i class="fa fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="social_list_item">
-                                        <a href="#">
+                                        <a href="#" rel="noreferrer">
                                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                                         </a>
                                     </li>
@@ -69,10 +58,10 @@
                             <div class="main_nav_container ml-auto">
                                 <ul class="main_nav_list">
                                     <li class="main_nav_item">
-                                        <a href="about-me">about me</a>
+                                        <a href="#about-me">about me</a>
                                     </li>
                                     <li class="main_nav_item">
-                                        <a href="blog.html">skills</a>
+                                        <a href="#skills">skills</a>
                                     </li>
                                     <li class="main_nav_item">
                                         <a href="blog.html">certificates</a>
@@ -94,6 +83,11 @@
                 </div>
             </nav>
         </header>
+
+        <!-- side menu-->
+        <div class="hamburger-side-menu d-none">
+            <i class="fa fa-bars trans_200 float-left"></i>
+        </div>
         <div class="menu trans_500">
             <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
                 <div class="menu_close_container">
@@ -101,33 +95,34 @@
                 </div>
                 <ul>
                     <li class="menu_item">
-                        <a href="about-me">about me</a>
+                        <a href="#about-me">about me</a>
                     </li>
                     <li class="menu_item">
-                        <a href="blog.html">skills</a>
+                        <a href="#skills">skills</a>
                     </li>
                     <li class="menu_item">
-                        <a href="blog.html">certificates</a>
+                        <a href="cert">certificates</a>
                     </li>
                     <li class="menu_item">
-                        <a href="blog.html">projects</a>
+                        <a href="project">projects</a>
                     </li>
                     <li class="menu_item">
-                        <a href="blog.html">resume</a>
+                        <a href="cv">resume</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- body content -->
+        <!-- about me -->
         <article id="about-me">
             <div class="about-me">
-                <h3 class="about-me-title">ABOUT ME</h3>
+                <h3 class="title">ABOUT ME</h3>
             </div>
-            <div class="container about-me-content">
+            <div class="container content">
                 <div class="row pt-md-5 pb-md-3">
                     <div class="col">
-                        <h3 class="name">Tang Hoai Nam</h3>
+                        <h3 class="font-weight-bold">Tang Hoai Nam</h3>
                         <h4 class="major">Java Developer</h4>
                     </div>
                     <div class="col-md-8">
@@ -136,7 +131,9 @@
                                 <i class="fa fa-map-marker pr-md-1"></i>
                                 <span>Bien Hoa, Dong Nai, Viet Nam</span>
                             </li>
-                            <li class="fa fa-envelope pt-2"><a href="mailto:namkty96@gmail.com" class="p-md-1">namkty96@gmail.com</a></li>
+                            <li class="fa fa-envelope pt-2">
+                                <a href="mailto:namkty96@gmail.com" class="p-md-1">namkty96@gmail.com</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -145,11 +142,11 @@
 
                 <div class="row pt-md-3">
                     <div class="col-md-4">
-                        <h4 class="text-dark font-weight-bold">Education</h4>
-                        <h4 class="text-dark font-weight-bold">Major</h4>
+                        <h4 class="name">Education</h4>
+                        <h4 class="name">Major</h4>
                     </div>
                     <div class="col-md-8 text-justify">
-                        <h4 class="text-dark font-weight-bold">About me</h4>
+                        <h4 class="name">About me</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In asperiores ducimus eligendi obcaecati.
                             Corrupti minima id in velit temporibus molestiae. Molestiae iusto maiores exercitationem doloribus
                             voluptatum quis! Doloribus, ut enim.</p>
@@ -163,9 +160,33 @@
                 </div>
             </div>
         </article>
-        <!-- Copyright -->
 
-        <div class="copyright">
+        <!-- skills-->
+        <article id="skills">
+            <div class="middle-title">
+                <h3 class="title">SKILLS</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 content">
+                        a
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5 content">c</div>
+                </div>
+            </div>
+        </article>
+
+        <!-- skills-->
+        <article id="cert">
+            <div class="middle-title">
+                <h3 class="title">CERTIFICATES</h3>
+            </div>
+        </article>
+
+        <!-- end body content-->
+        <!-- Copyright -->
+        <footer class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 order-lg-1 order-2  ">
@@ -173,8 +194,7 @@
                             <div>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-                                is made with
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
                                 <i class="fa fa-heart-o" aria-hidden="true"></i> by
                                 <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -186,19 +206,19 @@
                             <div class="footer_nav">
                                 <ul class="footer_nav_list">
                                     <li class="footer_nav_item">
-                                        <a href="about.html">about me</a>
+                                        <a href="#about-me">about me</a>
                                     </li>
                                     <li class="footer_nav_item">
-                                        <a href="blog.html">skills</a>
+                                        <a href="#skills">skills</a>
                                     </li>
                                     <li class="footer_nav_item">
-                                        <a href="blog.html">certificates</a>
+                                        <a href="cert">certificates</a>
                                     </li>
                                     <li class="footer_nav_item">
-                                        <a href="blog.html">projects</a>
+                                        <a href="project">projects</a>
                                     </li>
                                     <li class="footer_nav_item">
-                                        <a href="blog.html">resume</a>
+                                        <a href="cv">resume</a>
                                     </li>
                                 </ul>
                             </div>
@@ -206,8 +226,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <!-- <script src="./plugins/easing/easing.js"></script> -->
+
+    <!-- COLORLIB -->
+    <script src="./js/custom.js"></script>
+    <!-- END COLORLIB -->
 </body>
 
 </html>
