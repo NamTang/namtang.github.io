@@ -90,11 +90,11 @@ iframe {
 }
 
 .name {
-	color: #32323a;
-	margin: 0;
-	margin-bottom: 15px;
 	font-size: 18px;
-	font-weight: 400;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #32323a;
 }
 
 .major {
