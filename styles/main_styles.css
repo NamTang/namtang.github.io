@@ -649,12 +649,12 @@ section
 }
 .hamburger-side-menu
 {
-	left: 17px;
+	padding: 10px 12px;
+	right: 17px;
 	top: 33px;
-	z-index: 999;
-	background: rgba(54, 19, 84, 0.6);
-	position: fixed;
-	cursor: pointer;
+    background: rgba(54, 19, 84, 0.6);
+    position: fixed;
+    z-index: 999;
 }
 .header.scrolled .hamburger
 {

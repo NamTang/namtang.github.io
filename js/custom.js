@@ -32,11 +32,6 @@ $(document).ready(function () {
 
 	/*
 	setHeader();
-
-	$(window).on('resize', function () {
-		setHeader();
-	});
-
 	*/
 
 	$('a[href^="#"]').on('click', function (event) {
@@ -46,8 +41,7 @@ $(document).ready(function () {
 			closeMenu();
 		}
 
-		var navHeight = $('.header').css('height').replace('px', "");
-		var scrollTo = $($.attr(this, 'href')).offset().top - parseInt(navHeight);
+		var scrollTo = $($.attr(this, 'href')).offset().top;
 		$('html, body').animate({ scrollTop: scrollTo == 0 ? 143 : scrollTo }, 500);
 	});
 
@@ -60,6 +54,8 @@ $(document).ready(function () {
 	$(document).on('scroll', function () {
 		//setHeader();
 		if (window.scrollY >= 143) {
+			sideMenu.removeClass('d-none');
+		} else if (window.innerWidth <= 575 && window.innerWidth > 377 && window.scrollY >= 60) {
 			sideMenu.removeClass('d-none');
 		} else {
 			sideMenu.addClass('d-none');
