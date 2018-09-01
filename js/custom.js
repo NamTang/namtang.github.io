@@ -109,6 +109,7 @@ $(document).ready(function () {
 				}
 
 				$('img.center-fit').attr('src', images[imgIndex]);
+				$('.item-count').html((imgIndex + 1) + '/' + images.length);
 			});
 		}
 
@@ -122,6 +123,7 @@ $(document).ready(function () {
 				}
 
 				$('img.center-fit').attr('src', images[imgIndex]);
+				$('.item-count').html((imgIndex + 1) + '/' + images.length);
 			});
 		}
 

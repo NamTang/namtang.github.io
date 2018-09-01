@@ -50,7 +50,10 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
-
+.item-count {
+	right: 60px;
+	margin-bottom: 20px;
+}
 .center-fit {
 	max-width: 100%;
 	max-height: 800px;
@@ -914,7 +917,7 @@ section {
 }
 
 .home_slider_next {
-	right: 30px;
+	right: 25px;
 }
 
 .home_slider_prev:hover .nav_path, .home_slider_prev:hover .nav_arrow {
