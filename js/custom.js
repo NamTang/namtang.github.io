@@ -139,7 +139,7 @@ $(document).ready(function () {
 		}, 1000, function () {
 			$($('img.center-fit')[imgPrevIndex]).css({
 				"display": "none",
-				//"opacity": "",
+				"opacity": "",
 				//"padding-right": ""
 			});
 			$($('img.center-fit')[imgIndex]).css("display", "");
