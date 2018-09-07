@@ -134,14 +134,17 @@ $(document).ready(function () {
 	function imageAnimate(imgPrevIndex, imgIndex) {
 
 		$($('img.center-fit')[imgPrevIndex]).animate({
-			opacity: 0.25,
-			left: "+=150px",
-		  }, 1000, function() {
-			$($('img.center-fit')[imgPrevIndex]).css("display", "none");
-			$($('img.center-fit')[imgPrevIndex]).css("opacity", "");
+			opacity: 0.1,
+			//"padding-right": "+=250px",
+		}, 1000, function () {
+			$($('img.center-fit')[imgPrevIndex]).css({
+				"display": "none",
+				//"opacity": "",
+				//"padding-right": ""
+			});
 			$($('img.center-fit')[imgIndex]).css("display", "");
 			$('.item-count').html((imgIndex + 1) + '/' + 7);
-		  });
+		});
 
 		//$('img.center-fit').attr('src', images[imgIndex]);
 
